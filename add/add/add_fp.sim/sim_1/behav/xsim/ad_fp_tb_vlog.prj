@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../add_fp.srcs/sources_1/bd/design_1/ipshared/b65a" --include "../../../../add_fp.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../add_fp.srcs/sources_1/new/add_fp.v" \
+"../../../../add_fp.srcs/sim_1/new/ad_fp_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

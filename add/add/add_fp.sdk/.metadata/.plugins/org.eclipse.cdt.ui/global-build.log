@@ -1,0 +1,2220 @@
+17:50:44 **** Build of project add_test_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+17:51:25 **** Build of project test_add_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+17:51:31 **** Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+18:06:57 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+18:16:10 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:5: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+     Xil_Out32(base_addr+4,)
+     ^~~~~~~~~
+../src/helloworld.c:65:27: error: expected expression before ')' token
+     Xil_Out32(base_addr+4,)
+                           ^
+make: *** [src/helloworld.o] Error 1
+18:17:00 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:65:5: warning: implicit declaration of function 'Xil_Out32' [-Wimplicit-function-declaration]
+     Xil_Out32(base_addr+4, 9950);
+     ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\ducnv\Desktop\add\add\add_fp.sdk\test_add\Debug/../src/helloworld.c:65: undefined reference to `Xil_Out32'
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_add.elf] Error 1
+18:17:50 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2800	    268	   3108	   6176	   1820	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+18:29:03 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:67:28: warning: integer constant is too large for its type
+     Xil_Out32(base_addr+4, 00111111101000000000000000000000);
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:67:28: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+../src/helloworld.c:68:28: warning: integer constant is too large for its type
+     Xil_Out32(base_addr+8, 00111111110000000000000000000000);
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:70:9: warning: unused variable 'op' [-Wunused-variable]
+     u16 op=1;
+         ^~
+../src/helloworld.c:69:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2832	    268	   3108	   6208	   1840	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:14:43 **** Build of project test_add_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:14:49 **** Clean-only build of configuration Debug for project test_add ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  test_add.elf.size  test_add.elf
+' '
+09:14:49 **** Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:17:33 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: error: expected identifier or '(' before numeric constant
+     u32 0;
+         ^
+../src/helloworld.c:71:5: error: expected ';' before 'print'
+     print("Hello World\n\r");
+     ^~~~~
+make: *** [src/helloworld.o] Error 1
+09:17:40 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:5: error: expected ';' before 'print'
+     print("Hello World\n\r");
+     ^~~~~
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+make: *** [src/helloworld.o] Error 1
+09:19:16 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2800	    268	   3108	   6176	   1820	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:19:54 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:5: error: expected ';' before 'print'
+     print("Hello World\n\r");
+     ^~~~~
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+make: *** [src/helloworld.o] Error 1
+09:20:25 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+     for(int i=0,i<N ,i++){
+                  ^
+../src/helloworld.c:71:21: error: expected expression before ',' token
+     for(int i=0,i<N ,i++){
+                     ^
+../src/helloworld.c:71:21: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:75:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:77:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:77:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:77:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:78:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:79:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:21:42 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+     for(int i=0,i<N ,i++){
+                  ^
+../src/helloworld.c:71:21: error: expected expression before ',' token
+     for(int i=0,i<N ,i++){
+                     ^
+../src/helloworld.c:71:21: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:77:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:79:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:79:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:79:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:80:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:81:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:21:53 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:10: warning: ISO C99 requires whitespace after the macro name
+ #define N=50;
+          ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:10: error: expected expression before '=' token
+ #define N=50;
+          ^
+../src/helloworld.c:71:19: note: in expansion of macro 'N'
+     for(int i=0;i<N ;i++){
+                   ^
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:77:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:79:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:79:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:79:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:80:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:81:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:23:55 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:22: error: expected expression before ';' token
+     for(int i=0; i<N ;i++){
+                      ^
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:81:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:82:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:83:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:24:09 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:81:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:82:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:83:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:24:23 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:71:24: error: expected expression before ';' token
+     for(int i=0; i < N ;i++){
+                        ^
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:81:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:82:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:83:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:25:56 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:26: error: expected expression before ';' token
+     for (int i = 0; i < N; i++){
+                          ^
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:81:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:82:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:83:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:26:22 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:81:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:82:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:83:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:26:27 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:79:11: error: expected declaration specifiers or '...' before string constant
+     print("Hello World\n\r");
+           ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: data definition has no type or storage class
+     cleanup_platform();
+     ^~~~~~~~~~~~~~~~
+../src/helloworld.c:81:5: warning: type defaults to 'int' in declaration of 'cleanup_platform' [-Wimplicit-int]
+../src/helloworld.c:81:5: error: conflicting types for 'cleanup_platform'
+In file included from ../src/helloworld.c:49:0:
+../src/platform.h:39:6: note: previous declaration of 'cleanup_platform' was here
+ void cleanup_platform();
+      ^~~~~~~~~~~~~~~~
+../src/helloworld.c:82:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+../src/helloworld.c:83:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+09:26:40 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2932	    268	   3112	   6312	   18a8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:26:57 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2932	    268	   3112	   6312	   18a8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:27:02 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:26: error: expected expression before ';' token
+     for (int i = 0; i < N; i++){
+                          ^
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+make: *** [src/helloworld.o] Error 1
+09:27:13 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:26: error: expected expression before ';' token
+     for (int i = 0; i < N; i++){
+                          ^
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+make: *** [src/helloworld.o] Error 1
+09:27:50 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2932	    268	   3112	   6312	   18a8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:12:48 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:6: error: 'out1' undeclared (first use in this function); did you mean 'putw'?
+      out1 =Xil_In32(base_addr+28);
+      ^~~~
+      putw
+../src/helloworld.c:79:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:70:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+make: *** [src/helloworld.o] Error 1
+10:12:59 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:6: error: 'out' undeclared (first use in this function)
+      out =Xil_In32(base_addr+28);
+      ^~~
+../src/helloworld.c:79:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:70:9: warning: unused variable 'o' [-Wunused-variable]
+     u32 o;
+         ^
+make: *** [src/helloworld.o] Error 1
+10:13:27 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:70:9: warning: variable 'out' set but not used [-Wunused-but-set-variable]
+     u32 out;
+         ^~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3028	    268	   3112	   6408	   1908	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:16:07 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%f",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:79:27: warning: format '%f' expects argument of type 'double', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%f",out);
+                          ~^
+                          %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92472	   1436	   3188	  97096	  17b48	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:18:12 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:6: error: 'NaN' undeclared (first use in this function); did you mean 'NAN'?
+      NaN =Xil_in32(base_addr+20);
+      ^~~
+      NAN
+../src/helloworld.c:79:6: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:79:11: warning: implicit declaration of function 'Xil_in32'; did you mean 'Xil_In32'? [-Wimplicit-function-declaration]
+      NaN =Xil_in32(base_addr+20);
+           ^~~~~~~~
+           Xil_In32
+../src/helloworld.c:80:6: error: 'inf' undeclared (first use in this function); did you mean 'jnf'?
+      inf =Xil_in32(base_addr+24);
+      ^~~
+      jnf
+../src/helloworld.c:81:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%f",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:81:27: warning: format '%f' expects argument of type 'double', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%f",out);
+                          ~^
+                          %ld
+../src/helloworld.c:82:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:83:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%d",inf);
+              ^~~~~~~~~~~
+make: *** [src/helloworld.o] Error 1
+10:18:39 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:11: warning: implicit declaration of function 'Xil_in32'; did you mean 'Xil_In32'? [-Wimplicit-function-declaration]
+      NaN =Xil_in32(base_addr+20);
+           ^~~~~~~~
+           Xil_In32
+../src/helloworld.c:82:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%f",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:82:27: warning: format '%f' expects argument of type 'double', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%f",out);
+                          ~^
+                          %ld
+../src/helloworld.c:83:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:83:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%d",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%d",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:84:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ inf =%d",inf);
+                      ~^
+                      %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\ducnv\Desktop\add\add\add_fp.sdk\test_add\Debug/../src/helloworld.c:80: undefined reference to `Xil_in32'
+C:\Users\ducnv\Desktop\add\add\add_fp.sdk\test_add\Debug/../src/helloworld.c:81: undefined reference to `Xil_in32'
+collect2.exe: error: ld returned 1 exit status
+make: *** [test_add.elf] Error 1
+10:18:52 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:82:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%f",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:82:27: warning: format '%f' expects argument of type 'double', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%f",out);
+                          ~^
+                          %ld
+../src/helloworld.c:83:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%f",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:83:23: warning: format '%f' expects argument of type 'double', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%f",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%f",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:84:23: warning: format '%f' expects argument of type 'double', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ inf =%f",inf);
+                      ~^
+                      %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92592	   1436	   3188	  97216	  17bc0	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:23:53 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:12: error: invalid suffix "fc00000" on integer constant
+     u32 a =3fc00000;
+            ^~~~~~~~
+../src/helloworld.c:73:9: error: expected identifier or '(' before '=' token
+     u32 =b
+         ^
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%d",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:84:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%d",out);
+                          ~^
+                          %ld
+../src/helloworld.c:85:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:85:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%d",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:86:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =df",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:86:14: warning: too many arguments for format [-Wformat-extra-args]
+../src/helloworld.c:72:9: warning: unused variable 'a' [-Wunused-variable]
+     u32 a =3fc00000;
+         ^
+make: *** [src/helloworld.o] Error 1
+10:26:24 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:12: error: expected expression before ';' token
+     u32 a =;
+            ^
+../src/helloworld.c:73:9: error: expected identifier or '(' before '=' token
+     u32 =b
+         ^
+../src/helloworld.c:75:27: error: 'b' undeclared (first use in this function)
+     Xil_Out32(base_addr+8,b);
+                           ^
+../src/helloworld.c:75:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%d",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:84:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%d",out);
+                          ~^
+                          %ld
+../src/helloworld.c:85:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:85:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%d",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:86:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%d",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:86:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ inf =%d",inf);
+                      ~^
+                      %ld
+../src/helloworld.c:72:9: warning: unused variable 'a' [-Wunused-variable]
+     u32 a =;
+         ^
+make: *** [src/helloworld.o] Error 1
+10:26:46 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:73:9: error: expected identifier or '(' before '=' token
+     u32 =b-1000;
+         ^
+../src/helloworld.c:75:27: error: 'b' undeclared (first use in this function)
+     Xil_Out32(base_addr+8,b);
+                           ^
+../src/helloworld.c:75:27: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%d",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:84:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%d",out);
+                          ~^
+                          %ld
+../src/helloworld.c:85:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:85:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%d",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:86:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%d",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:86:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ inf =%d",inf);
+                      ~^
+                      %ld
+make: *** [src/helloworld.o] Error 1
+10:26:53 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%d",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:84:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%d",out);
+                          ~^
+                          %ld
+../src/helloworld.c:85:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:85:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%d",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:86:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%d",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:86:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ inf =%d",inf);
+                      ~^
+                      %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92608	   1436	   3188	  97232	  17bd0	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:27:03 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:84:14: warning: unknown escape sequence: '\040'
+       printf("\ ket qua =%d",out);
+              ^~~~~~~~~~~~~~~
+../src/helloworld.c:84:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ ket qua =%d",out);
+                          ~^
+                          %ld
+../src/helloworld.c:85:14: warning: unknown escape sequence: '\040'
+       printf("\ NaN =%d",NaN);
+              ^~~~~~~~~~~
+../src/helloworld.c:85:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ NaN =%d",NaN);
+                      ~^
+                      %ld
+../src/helloworld.c:86:14: warning: unknown escape sequence: '\040'
+       printf("\ inf =%d",inf);
+              ^~~~~~~~~~~
+../src/helloworld.c:86:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+       printf("\ inf =%d",inf);
+                      ~^
+                      %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92608	   1436	   3188	  97232	  17bd0	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:28:25 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+10:28:32 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+10:32:44 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:73:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:85:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:85:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:86:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:86:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:87:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:87:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92648	   1436	   3188	  97272	  17bf8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:33:16 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:73:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:85:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:85:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:86:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:86:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:87:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:87:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92648	   1436	   3188	  97272	  17bf8	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:53:28 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:85:15: error: macro "putc" requires 2 arguments, but only 1 given
+       putc("1");
+               ^
+../src/helloworld.c:85:7: warning: statement with no effect [-Wunused-value]
+       putc("1");
+       ^~~~
+../src/helloworld.c:89:15: error: macro "putc" requires 2 arguments, but only 1 given
+       putc("0");
+               ^
+../src/helloworld.c:89:7: warning: statement with no effect [-Wunused-value]
+       putc("0");
+       ^~~~
+../src/helloworld.c:94:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:95:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:107:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:108:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:108:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:109:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:109:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+make: *** [src/helloworld.o] Error 1
+10:53:40 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:85:15: error: macro "putc" requires 2 arguments, but only 1 given
+       putc('1');
+               ^
+../src/helloworld.c:85:7: warning: statement with no effect [-Wunused-value]
+       putc('1');
+       ^~~~
+../src/helloworld.c:89:15: error: macro "putc" requires 2 arguments, but only 1 given
+       putc('0');
+               ^
+../src/helloworld.c:89:7: warning: statement with no effect [-Wunused-value]
+       putc('0');
+       ^~~~
+../src/helloworld.c:94:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:95:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:107:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:108:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:108:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:109:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:109:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+make: *** [src/helloworld.o] Error 1
+10:53:55 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:85:14: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+       printf('1');
+              ^~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../src/helloworld.c:89:14: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+       printf('0');
+              ^~~
+In file included from c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/helloworld.c:48:
+c:\xilinx\sdk\2018.2\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:181:5: note: expected 'const char * restrict' but argument is of type 'int'
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+../src/helloworld.c:94:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:95:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:107:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:108:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:108:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:109:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:109:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92804	   1436	   3192	  97432	  17c98	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:54:25 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:94:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:95:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:107:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:108:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:108:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:109:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:109:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93664	   1436	   3188	  98288	  17ff0	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:55:11 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:94:12: warning: integer constant is too large for its type
+     u32 a =00111111110000000000000000000000;//1.5
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:95:12: warning: integer constant is too large for its type
+     u32 b= 00111111110000000000000000000000;
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:107:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:108:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:108:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:109:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:109:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94216	   1436	   3188	  98840	  18218	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+10:55:21 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+10:55:29 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+10:55:38 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+10:55:58 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+10:56:32 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:03:17 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:14:27 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:20:07 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:22:25 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:22:28 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:23:43 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+11:42:39 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:95:31: error: 'a' undeclared (first use in this function)
+         Xil_Out32(base_addr+4,a);
+                               ^
+../src/helloworld.c:95:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:96:31: error: 'b' undeclared (first use in this function)
+         Xil_Out32(base_addr+8,b);
+                               ^
+../src/helloworld.c:105:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:105:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:106:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:106:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:107:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+make: *** [src/helloworld.o] Error 1
+11:42:59 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:105:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:105:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:106:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:106:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:107:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:107:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:109:9: error: 'a' undeclared (first use in this function)
+         a=a+1;
+         ^
+../src/helloworld.c:109:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+11:43:47 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:115:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:115:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:116:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:116:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:117:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:119:9: error: 'a' undeclared (first use in this function)
+         a=a+1;
+         ^
+../src/helloworld.c:119:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/helloworld.o] Error 1
+11:43:54 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:115:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:115:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:116:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:116:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:117:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97600	   1436	   3188	 102224	  18f50	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+11:45:42 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",out);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:117:29: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ ket qua =%d",out);
+                            ~^
+                            %ld
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97616	   1436	   3188	 102240	  18f60	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+11:45:56 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%d",output);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97612	   1436	   3192	 102240	  18f60	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+11:46:25 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:75:15: warning: assignment from incompatible pointer type [-Wincompatible-pointer-types]
+     i_pointer = & f_type;
+               ^
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%s",output);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:117:29: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+         printf("\ ket qua =%s",output);
+                            ~^
+                            %d
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97612	   1436	   3192	 102240	  18f60	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+11:56:39 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%s",output);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:117:29: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+         printf("\ ket qua =%s",output);
+                            ~^
+                            %d
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:18: warning: unused variable 'i_pointer' [-Wunused-variable]
+     int i_type, *i_pointer;
+                  ^~~~~~~~~
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97592	   1436	   3188	 102216	  18f48	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+11:57:56 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%s",output);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:117:29: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+         printf("\ ket qua =%s",output);
+                            ~^
+                            %d
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:18: warning: unused variable 'i_pointer' [-Wunused-variable]
+     int i_type, *i_pointer;
+                  ^~~~~~~~~
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+../src/helloworld.c:70:9: warning: variable 'out' set but not used [-Wunused-but-set-variable]
+     u32 out;
+         ^~~
+../src/helloworld.c:108:14: warning: 'output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          if (output & (1 << i))
+              ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97580	   1436	   3192	 102208	  18f40	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+15:00:47 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+08:58:25 **** Build of project abc_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:58:33 **** Build of configuration Debug for project abc ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../abc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../abc_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: abc.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../abc_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "abc.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: abc.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size abc.elf  |tee "abc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	abc.elf
+'Finished building: abc.elf.size'
+' '
+08:58:47 **** Build of project abcd_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:58:55 **** Build of configuration Debug for project abcd ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../abcd_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../abcd_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: abcd.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../abcd_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "abcd.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: abcd.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size abcd.elf  |tee "abcd.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	abcd.elf
+'Finished building: abcd.elf.size'
+' '
+09:13:29 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:10: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+09:35:03 **** Auto Build of project test_add_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:35:10 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%s",output);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:117:29: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+         printf("\ ket qua =%s",output);
+                            ~^
+                            %d
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:18: warning: unused variable 'i_pointer' [-Wunused-variable]
+     int i_type, *i_pointer;
+                  ^~~~~~~~~
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+../src/helloworld.c:70:9: warning: variable 'out' set but not used [-Wunused-but-set-variable]
+     u32 out;
+         ^~~
+../src/helloworld.c:108:14: warning: 'output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          if (output & (1 << i))
+              ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97580	   1436	   3192	 102208	  18f40	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:35:32 **** Auto Build of project test_add_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_7/src"
+make -C microblaze_0/libsrc/cpu_v2_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/myaddfp_v1_0/src"
+make -C microblaze_0/libsrc/myaddfp_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling myaddfp..."
+myaddfp_selftest.c: In function 'MYADDFP_Reg_SelfTest':
+myaddfp_selftest.c:52:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( MYADDFP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                        ^~
+myaddfp_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_7/src"
+make -C microblaze_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:35:37 **** Auto Build of configuration Debug for project test_add ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:117:16: warning: unknown escape sequence: '\040'
+         printf("\ ket qua =%s",output);
+                ^~~~~~~~~~~~~~~
+../src/helloworld.c:117:29: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+         printf("\ ket qua =%s",output);
+                            ~^
+                            %d
+../src/helloworld.c:118:16: warning: unknown escape sequence: '\040'
+         printf("\ NaN =%d",NaN);
+                ^~~~~~~~~~~
+../src/helloworld.c:118:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ NaN =%d",NaN);
+                        ~^
+                        %ld
+../src/helloworld.c:119:16: warning: unknown escape sequence: '\040'
+         printf("\ inf =%d",inf);
+                ^~~~~~~~~~~
+../src/helloworld.c:119:25: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+         printf("\ inf =%d",inf);
+                        ~^
+                        %ld
+../src/helloworld.c:74:18: warning: unused variable 'i_pointer' [-Wunused-variable]
+     int i_type, *i_pointer;
+                  ^~~~~~~~~
+../src/helloworld.c:74:9: warning: variable 'i_type' set but not used [-Wunused-but-set-variable]
+     int i_type, *i_pointer;
+         ^~~~~~
+../src/helloworld.c:70:9: warning: variable 'out' set but not used [-Wunused-but-set-variable]
+     u32 out;
+         ^~~
+../src/helloworld.c:108:14: warning: 'output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          if (output & (1 << i))
+              ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_add_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: test_add.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_add_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test_add.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_add.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size test_add.elf  |tee "test_add.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97580	   1436	   3192	 102208	  18f40	test_add.elf
+'Finished building: test_add.elf.size'
+' '
+09:41:11 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.
+09:41:15 **** Incremental Build of configuration Debug for project test_add ****
+make all 
+make: Nothing to be done for `all'.

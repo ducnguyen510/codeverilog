@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../add_fp.srcs/sources_1/bd/design_1/ipshared/b65a" --include "../../../../add_fp.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../add_fp.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ipshared/d796/hdl/myaddfp_v1_0_S00_AXI.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ipshared/d796/hdl/myaddfp_v1_0.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ipshared/d796/drivers/myaddfp_v1_0/add_fp.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ip/design_1_myaddfp_0_0/sim/design_1_myaddfp_0_0.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+"../../../../add_fp.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../add_fp.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

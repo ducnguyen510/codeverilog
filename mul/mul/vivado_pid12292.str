@@ -1,0 +1,255 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 12292
+License: Customer
+
+Current time: 	Wed Dec 25 14:41:44 ICT 2019
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 102 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	ducnv
+User home directory: C:/Users/ducnv
+User working directory: C:/Users/ducnv/Desktop/FP/mul/mul
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/ducnv/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/ducnv/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/ducnv/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ducnv/Desktop/FP/mul/mul/vivado.log
+Vivado journal file location: 	C:/Users/ducnv/Desktop/FP/mul/mul/vivado.jou
+Engine tmp dir: 	C:/Users/ducnv/Desktop/FP/mul/mul/.Xil/Vivado-12292-DESKTOP-T3C5JMR
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 582 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 76 MB (+76734kb) [00:00:07]
+// [Engine Memory]: 503 MB (+376068kb) [00:00:07]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ducnv\Desktop\FP\mul\mul\mul.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ducnv/Desktop/FP/mul/mul/mul.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 88 MB (+9347kb) [00:00:09]
+// [Engine Memory]: 579 MB (+53038kb) [00:00:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 582 MB. GUI used memory: 37 MB. Current time: 12/25/19 2:41:46 PM ICT
+// [Engine Memory]: 789 MB (+189968kb) [00:00:14]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,110 MB (+295216kb) [00:00:20]
+// Tcl Message: open_project C:/Users/ducnv/Desktop/FP/mul/mul/mul.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ducnv/Music/mul' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/ducnv/Desktop/FP/mul/ip_repo/mymulfp_1.0'; using path 'C:/Users/ducnv/Music/ip_repo/mymulfp_1.0' instead. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ducnv/Music/ip_repo/mymulfp_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// Project name: mul; location: C:/Users/ducnv/Desktop/FP/mul/mul; part: xcvu9p-flga2104-2L-e
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1333.309 ; gain = 608.234 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (ck):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,149 MB. GUI used memory: 47 MB. Current time: 12/25/19 2:42:16 PM ICT
+// [Engine Memory]: 1,740 MB (+601863kb) [00:00:45]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// [Engine Memory]: 1,931 MB (+109410kb) [00:00:55]
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,932 MB. GUI used memory: 47 MB. Current time: 12/25/19 2:42:30 PM ICT
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2018.2/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcvu9p/xcvu9p.xgd; ZipEntry: xcvu9p_detail.xgd elapsed time: 1.8s
+// [GUI Memory]: 161 MB (+71805kb) [00:01:00]
+// [Engine Memory]: 2,872 MB (+885462kb) [00:01:00]
+// Package: addNotify
+// Device: addNotify
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 6.4s
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xcvu9p-flga2104-2L-e INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.460 . Memory (MB): peak = 2183.953 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.462 . Memory (MB): peak = 2183.953 ; gain = 0.000 
+// Tcl Message: Generating merged BMM file for the design top 'design_1_wrapper'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/ducnv/Desktop/FP/mul/mul/mul.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf  INFO: [Project 1-111] Unisim Transformation Summary:   A total of 99 instances were transformed.   IBUF => IBUF (IBUFCTRL, INBUF): 2 instances   IBUFDS => IBUFDS (DIFFINBUF, IBUFCTRL): 1 instances   LUT6_2 => LUT6_2 (LUT5, LUT6): 79 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 16 instances   SRLC16E => SRL16E: 1 instances  
+// ExpRunCommands.openImplResults elapsed time: 31.4s
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 3052.891 ; gain = 1719.582 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 169 MB (+172kb) [00:01:04]
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 179 MB (+856kb) [00:01:05]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 191 MB (+3358kb) [00:01:08]
+// 'dP' command handler elapsed time: 35 seconds
+// Elapsed time: 36 seconds
+dismissDialog("Open Implemented Design"); // bx (ck)
+// [Engine Memory]: 3,146 MB (+136648kb) [00:01:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,146 MB. GUI used memory: 185 MB. Current time: 12/25/19 2:42:56 PM ICT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,488 MB. GUI used memory: 162 MB. Current time: 12/25/19 2:43:11 PM ICT
+// [Engine Memory]: 3,712 MB (+428884kb) [00:01:39]
+// [Engine Memory]: 4,136 MB (+249524kb) [00:01:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,136 MB. GUI used memory: 161 MB. Current time: 12/25/19 2:43:26 PM ICT
+// RouteApi::initDelayMediator elapsed time: 53.5s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 91 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/ducnv/Desktop/FP/mul/mul/mul.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0 Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 Adding cell -- xilinx.com:user:mymulfp:1.0 - mymulfp_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram Successfully read diagram <design_1> from BD file <C:/Users/ducnv/Desktop/FP/mul/mul/mul.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 4501.922 ; gain = 0.000 
+// Elapsed time: 10 seconds
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// HOptionPane Warning: ''mymulfp_0' is locked. Customization changes are not allowed. You should upgrade the IP using 'Report IP Status' from Reports menu. (Vivado)'
+selectButton("PAResourceAtoD.CustomizeRSBBlock_IP_LOCKED_CUSTOMIZATION_CHANGES_OK", "OK"); // JButton (A, G)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /reset_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 216, 168, 1251, 568, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name mymulfp_v1_0_project -directory C:/Users/ducnv/Desktop/FP/mul/mul/mul.tmp/mymulfp_v1_0_project c:/Users/ducnv/Music/ip_repo/mymulfp_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ducnv/Music/ip_repo/mymulfp_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 202 MB (+1547kb) [00:03:16]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 4501.922 ; gain = 0.000 
+// 'i' command handler elapsed time: 8 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 213 MB (+1022kb) [00:04:21]
+// Elapsed time: 66 seconds
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao (O, ck)
+closeMainWindow("mymulfp_v1_0_project - [c:/users/ducnv/desktop/fp/mul/mul/mul.tmp/mymulfp_v1_0_project/mymulfp_v1_0_project.xpr] - Vivado 2018.2"); // ck
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (ck): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Close Project : addNotify
+dismissDialog("Close Project"); // A (ck)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,136 MB. GUI used memory: 179 MB. Current time: 12/25/19 2:46:03 PM ICT
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bx (ck)
+closeMainWindow("mul - [C:/Users/ducnv/Desktop/FP/mul/mul/mul.xpr] - Vivado 2018.2"); // ck
+// A (ck): Exit Vivado: addNotify
+dismissDialog("Exit Vivado"); // A (ck)
